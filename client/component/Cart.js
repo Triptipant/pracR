@@ -10,11 +10,20 @@ class Cart extends Component {
     this.state = {
     }
   }
+
+   handledelete(idx) {
+   this.props.deletelistcart(idx);
+    
+  }
+
   render() 
   {
-      console.log(this.props.cart);
+   
     const cartList = this.props.cart.map((item, idx) => {
-        return <li key={idx}>{item}</li>;
+        return <li key={idx}>{item}
+        <button onClick ={() => this.handledelete(idx)}>[-]
+          </button></li>;
+          console.log(this.props.cart);
     });
     
     return (

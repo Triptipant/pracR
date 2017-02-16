@@ -1,15 +1,24 @@
-const cart = (state =[], payload) => {
-    switch (payload.type) {
+const cart = (state =[], action) => {
+    switch (action.type) {
         case 'add': {
-            return [...state, payload.item];
+            return [...state, action.item];
     }
     case 'addtext': {
-        console.log('ball');
-            return [...state, payload.text];  
-            console.log('basdfasdfasdfall'); 
+       
+            return [...state, action.text];  
+          
     } 
-    default:
-            return state;
+    
+    case 'DELETE_LISTCART' : 
+         console.log("delete2");
+                return [
+                    ...state.slice(0,action.idx),
+                    ...state.slice(action.idx+1),
+                  
+                ]
+          default:
+             return state;
+
 
 };
 

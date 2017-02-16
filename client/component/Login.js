@@ -2,6 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Dashboard from './Dashboard';
+// const { Router,
+//         Route,
+//         IndexRoute,
+//         Redirect,
+//         Link,
+//         IndexLink
+//       } = ReactRouter
+
 
 
 const Login = React.createClass({
@@ -17,14 +25,21 @@ const Login = React.createClass({
        
         const email = this.refs.email.value;
         const password = this.refs.password.value;
-        const id = new date();
-        this.props.login(email,password,id);
+      
+        console.log(this.props.login(email,password));
+        // this.context.router.push('/Dashboard/23')
+     
+      
+      
     },
     render() {
 
+        
         return (
+          
             <div>
-                 Please Login
+                
+                 Please Login 
                 <form ref ="loginform" className="login-form"  onSubmit={this.handleSubmit}> 
                     <input
                         type="text"
@@ -36,12 +51,14 @@ const Login = React.createClass({
                         ref="password"
                         placeholder="Password"
                     /><br/>
-                    
-                   <Link to = {`/Dashboard`}> 
-                   <button>Login</button>
+
+                   <button >
+                         <Link to = {`/Cart`}> 
+                  Login
                    </Link>
+                   </button>
                 </form>
-               
+                
             </div>
         );
     }

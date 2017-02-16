@@ -1,19 +1,26 @@
 function addComments(state = [], action) {
-    console.log("s");
-    console.log(state);
+ let newitem
     switch(action.type){
-        case 'ADD_COMMENT':
-            return [
+        case 'ADD_COMMENT': 
+              return [
                 ...state,{
                     email:action.email,
                     password:action.password,
                     id:action.id
                 }
-
-            ];
-      
-           
-        default:
+               ];
+     
+         case 'DELETE_LIST' : 
+         console.log("delete");
+                return [
+                    ...state.slice(0,action.idx),
+                    ...state.slice(action.idx+1)
+                ]
+                
+                    
+            
+          
+      default:
             return state;
     }
     return state;

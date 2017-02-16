@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import login from './login';
+import loginadd from './login';
 import dashboard from './dashboard';
 import cart from './cart';
 const rootReducer = combineReducers ({
 
-    login,
+    loginadd,
     dashboard,
     cart,
     routing: routerReducer

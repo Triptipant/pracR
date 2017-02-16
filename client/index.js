@@ -44,7 +44,7 @@ const router = (
 )
 
 //export default router;
-console.log()
+
 render (
     router,
     document.getElementById('root')

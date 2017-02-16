@@ -1,5 +1,5 @@
 // increment
-export function login(email,password,id) {
+export function login(email,password) {
   
   return {
     type: 'ADD_USER',
@@ -23,12 +23,21 @@ export function addComment(email,password,id) {
   }
 }
 
+export function deletelistcart(idx) {
+  return {
+    type: 'DELETE_LISTCART',
+    idx
+  }
+}
+
+
+
 // remove comment
 
 
 
 export const addToCart = (item) => {
-  console.log('adding item:', item);
+  
   return {
       type: 'add',
       item
