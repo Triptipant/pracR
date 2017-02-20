@@ -8,15 +8,14 @@
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
-    "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos"
+    "tunnel": "browser-sync start --proxy localhost:7770 --"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/wesbos/Learn-Redux.git"
+    "type": "git"
+  
   },
-  "author": "Wes Bos",
+  "author": "Tripti",
   "license": "MIT",
-  "homepage": "https://github.com/wesbos/Learn-Redux",
   "dependencies": {
     "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
