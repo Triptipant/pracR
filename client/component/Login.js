@@ -2,13 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Dashboard from './Dashboard';
-// const { Router,
-//         Route,
-//         IndexRoute,
-//         Redirect,
-//         Link,
-//         IndexLink
-//       } = ReactRouter
 
 
 
@@ -26,8 +19,8 @@ const Login = React.createClass({
         const email = this.refs.email.value;
         const password = this.refs.password.value;
       
-        console.log(this.props.login(email,password));
-        // this.context.router.push('/Dashboard/23')
+        this.props.login(email,password);
+        this.context.router.push('/Cart/')
      
       
       
@@ -53,9 +46,9 @@ const Login = React.createClass({
                     /><br/>
 
                    <button >
-                         <Link to = {`/Cart`}> 
+                         {/*<Link to = {`/Dashboard`}> */}
                   Login
-                   </Link>
+                   {/*</Link>*/}
                    </button>
                 </form>
                 
@@ -64,4 +57,7 @@ const Login = React.createClass({
     }
 })
 
+ Login.contextTypes = {
+    router: React.PropTypes.object
+  }
 export default Login;
