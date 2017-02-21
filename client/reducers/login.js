@@ -11,6 +11,17 @@ function addUser(state = [], action) {
                 }
               
             ]  
+        case 'ADD_NEW_USER':
+        return [
+          ...state,{
+                    name:action.name,
+                    email:action.email,
+                    password:action.password,
+                    address:action.address
+                  
+                   
+                }
+        ]
               
     }
     return state;   

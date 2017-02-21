@@ -6,8 +6,6 @@ export function login(email,password) {
     email,
     password
     
-    
-    
   }
 }
 
@@ -30,12 +28,6 @@ export function deletelistcart(idx) {
   }
 }
 
-
-
-// remove comment
-
-
-
 export const addToCart = (item) => {
   
   return {
@@ -52,3 +44,14 @@ export const  addfromtext = (text) => {
         }
 
 }
+
+export const addnewuser = (name,email,password,address) => {
+        return {
+          type: 'ADD_NEW_USER',
+          name,
+          email,
+          password,
+          address
+        }
+
+} 

@@ -19,7 +19,7 @@ import { render } from 'react-dom';
 import App from './component/App';
 import Login from './component/Login';
 import Dashboard from './component/Dashboard';
-// import NewUser from './component/NewUser';
+import NewUser from './component/NewUser';
 import Logout from './component/Logout';
 import Cart from './component/Cart';
 import { Provider } from 'react-redux';
@@ -37,7 +37,7 @@ const router = (
                   <Route exact={true} path="/Cart" component={Cart}/>
                 <Route path="/Logout" component={Logout}/>
                 <Route path="/Cart" component={Cart}/>
-                {/*<Route path="/NewUser" component={NewUser}></Route>*/}
+                <Route path="/NewUser" component={NewUser}></Route>
             </Route> 
         </Router>       
     </Provider>
