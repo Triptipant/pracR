@@ -10,7 +10,8 @@ export default class NewUser extends React.Component {
      name:'',
       email: '',
       password:'',
-      address:''
+      address:'',
+      error:''
     };
   }
 
@@ -19,7 +20,7 @@ export default class NewUser extends React.Component {
     let errorMessage;
     if (this.state.email.length === 0) {
       errorMessage = 'You must enter email.';
-      console.log(errorMessage);
+     this.state.error=errorMessage;
     }
    
     else {
@@ -75,7 +76,9 @@ export default class NewUser extends React.Component {
             value={this.state.email}
             onChange={(evt)=>this.handleChangee(evt)}
             placeholder="Email"
-          /><br/>
+        
+          />
+         <div> {this.state.error}</div>
            <input
             type="text"
             value={this.state.password}
