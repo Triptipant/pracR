@@ -45,12 +45,12 @@ export default class Dashboard extends React.Component {
                    <button>Logout</button>
                    </Link>
             <div >
-              <h1>Add list </h1><br/>
+              <h1>Add Your password for future reference </h1><br/>
             <DashboardList 
             addItem = { this.props.addComment } 
             />
             </div>
-            <div> {list}</div>
+            <div>{list}</div>
        
       </div>
     );

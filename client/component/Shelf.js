@@ -39,7 +39,7 @@ class Shelf extends Component {
             <form>
           <div>
             <label>
-            Please Add The New Items
+            Please list the items to track
               <input
               type = "text"
               placeholder = "Please Enter the items"
