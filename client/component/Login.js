@@ -60,7 +60,7 @@ export default class NewUser extends React.Component {
             placeholder="Email"
           /> <div> {this.state.error}</div><br/>
            <input
-            type="text"
+            type="password"
             value={this.state.password}
             onChange={(evt)=>this.handleChangep(evt)}
             placeholder="Password"

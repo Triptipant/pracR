@@ -80,7 +80,7 @@ export default class NewUser extends React.Component {
           />
          <div> {this.state.error}</div>
            <input
-            type="text"
+            type="password"
             value={this.state.password}
             onChange={(evt)=>this.handleChangep(evt)}
             placeholder="Password"
