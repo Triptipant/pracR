@@ -7,8 +7,8 @@ class Shelf extends Component {
       shelfItems: [
         'Be Happy',
         'Always Smile',
-        
-      ]
+        ],
+      username:''
     }
   }
   handleclick(item) {
@@ -17,7 +17,9 @@ class Shelf extends Component {
   }
     onsubmit(username) {
       username.preventDefault();
-    this.props.add(this.state.username);
+      this.props.add(this.state.username);
+      this.setState.username ='';
+     
   }
 
   onChangeName(evt) {

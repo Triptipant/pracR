@@ -23,10 +23,7 @@ export default class Dashboard extends React.Component {
       const list = this.props.dashboard.map((item, idx) => {
         return <li key={idx}>{item.email}
 
-          
-          
-          
-     </li>
+       </li>
     });
   
    const name =( (this.props.loginadd[0].email));

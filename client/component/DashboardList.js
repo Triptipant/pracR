@@ -16,6 +16,8 @@ export default class DashboardList extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.addItem(this.state.email,this.state.password)
+     this.setState({email:''})
+     this.setState({password:''})
    
     
 }
