@@ -18,11 +18,8 @@ export default class DashboardList extends React.Component {
     this.props.addItem(this.state.email,this.state.password)
      this.setState({email:''})
      this.setState({password:''})
-   
     
 }
-  
-
   handleChangee(evt) {
     this.setState({
       email: evt.target.value,

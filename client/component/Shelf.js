@@ -18,7 +18,8 @@ class Shelf extends Component {
     onsubmit(username) {
       username.preventDefault();
       this.props.add(this.state.username);
-      this.setState.username ='';
+      this.setState({username:''})
+      console.log(this.state.username)
      
   }
 
