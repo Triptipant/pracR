@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router';
 import Login from './Login';
+import  '../../style/style_test.css';
+
+
 
 
 const Main = React.createClass ({

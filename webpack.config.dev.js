@@ -24,6 +24,10 @@ module.exports = {
       loaders: ['babel'],
       include: path.join(__dirname, 'client')
     },
+    {
+    test: /\.css$/,
+    loaders: ['style', 'css'],
+    },
   
     ]
   }
