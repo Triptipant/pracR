@@ -49,7 +49,7 @@ export default class NewUser extends React.Component {
 
   {
     return (
-        <div>
+        <div className="wrapper">
       <form  onSubmit={this.handleSubmit} ref="Form">
         <div >
            <div> Welcome to  Login page </div>
