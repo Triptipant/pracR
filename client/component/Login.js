@@ -50,32 +50,35 @@ export default class NewUser extends React.Component {
   {
     return (
         <div className="wrapper">
-      <form  onSubmit={this.handleSubmit} ref="Form">
-        <div >
-           <div> Welcome to  Login page </div>
-         <input
-            type="text"
-            value={this.state.email}
-            onChange={(evt)=>this.handleChangee(evt)}
-            placeholder="Email"
-          /> <div> {this.state.error}</div><br/>
-           <input
-            type="password"
-            value={this.state.password}
-            onChange={(evt)=>this.handleChangep(evt)}
-            placeholder="Password"
-          /><br/>
-          
-        </div><br/>
-        <div >
-         <button>Login</button>
-        </div>
-      </form>
-       
-                <Link to = {`/NewUser`}> 
-                 <button >  NewUser </button>
+          <div className="form-wrapper">
+          <form  onSubmit={this.handleSubmit} ref="Form">
+            <div >
+              <div className="label"> Welcome to  Login page </div>
+            <input
+                type="text"
+                value={this.state.email}
+                onChange={(evt)=>this.handleChangee(evt)}
+                placeholder="Email"
+              /> <div> {this.state.error}</div><br/>
+              <input
+                type="password"
+                value={this.state.password}
+                onChange={(evt)=>this.handleChangep(evt)}
+                placeholder="Password"
+              /><br/>
+              
+            </div><br/>
+            <div >
+            <button className="loginbtn">Login</button>
+            </div>
+          </form>
+             <Link to = {`/NewUser`}> 
+                 <button  className="newuserbtn">  NewUser </button>
                    </Link>
         
+          </div>
+       
+             
       </div>
       
     );
